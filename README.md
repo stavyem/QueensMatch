@@ -33,11 +33,14 @@ Built during the QueenB x AppsFlyer Bootcamp.
 ```text
 QueensMatch/
 ├── server/                 # Express backend & API
-│   ├── routes/            # API endpoints & authentication
-│   ├── services/          # Nodemailer & Cron job workers
-│   ├── index.js           # Entry point
-│   └── .env.example       # Environment setup template
+│   ├── db/                # Database connection & queries
+│   ├── jobs/              # Scheduled Cron jobs
+│   ├── middleware/        # Express middleware (auth, validation)
+│   ├── routes/            # API endpoints
+│   ├── services/          # Nodemailer & external integrations
+│   ├── utils/             # Helper functions
+│   └── index.js           # Server entry point
 ├── client/                # React frontend
-│   ├── src/               # UI components, pages, & context
+│   ├── src/               # UI components & pages
 │   └── package.json
 └── README.md
